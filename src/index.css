@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: faNum;
+  src: url("assets/fonts/faNum.ttf");
+}
+
+html,
+body {
+  font-family: faNum;
+}
