@@ -5,14 +5,14 @@ import HeroPanel from "../heroPanel/HeroPanel";
 function Hero() {
   return (
     <div className="w-full mb-20 sm:25 md:mb-35">
-      <div className="w-full h-135 relative">
+      <div className="w-full h-135 relative overflow-hidden">
         <img
           src={HeroImage}
           className="w-full h-full object-cover"
           alt="banner"
         />
         <div className="absolute inset-0 bg-white/35 flex flex-col justify-center items-center gap-5">
-          <div className="w-88 h-4 sm:w-108 sm:h-5 md:w-126 md:h-10 bg-[#5D5FEF] relative mb-4">
+          <div className="w-90 h-4 sm:w-108 sm:h-5 md:w-126 md:h-10 bg-[#5D5FEF] relative mb-4">
             <p className="absolute right-0 top-0 -translate-y-1/2 text-2xl sm:text-3xl md:text-4xl font-bold">
               آینده ی ملکی خود را با ما بسازید...
             </p>

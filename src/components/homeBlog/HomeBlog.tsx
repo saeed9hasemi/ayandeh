@@ -15,7 +15,7 @@ function HomeBlog() {
   const { data } = useHomePage();
 
   return (
-    <div className="w-full px-8 md:px-10 lg:px-20 overflow-hidden! flex flex-col gap-1 items-center mb-100">
+    <div className="w-full px-8 md:px-10 lg:px-20 overflow-hidden! flex flex-col gap-1 items-center mb-40 sm:mb-50 md:mb-60 lg:mb-70 xl:mb-80">
       <h4 className="text-2xl font-semibold">وبلاگ</h4>
       <p className="mb-6">حوزه املاک و ساختمان</p>
       <div className="w-full h-75 sm:h-105  rounded-3xl relative">
@@ -39,7 +39,7 @@ function HomeBlog() {
                       {blog.title}
                     </p>
                     <p
-                      className="lg:text-[#979797] text-sm md:text-base lg:text-xl md:leading-8 line-clamp-4 lg:line-clamp-5"
+                      className="lg:text-[#979797] text-sm md:text-base lg:text-xl md:leading-8 line-clamp-3 md:line-clamp-4 lg:line-clamp-5"
                       dangerouslySetInnerHTML={{
                         __html: blog.description ?? "",
                       }}

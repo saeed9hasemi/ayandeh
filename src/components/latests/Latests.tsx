@@ -17,7 +17,7 @@ function Latests() {
   return (
     <div className="w-full flex flex-col gap-20 items-center mb-35">
       <h4 className="text-2xl font-semibold">آخرین آگهی های درج شده ملکی</h4>
-      <div className="w-full relative px-15 lg:px-20 xl:px-70 pb-10 h-90 sm:h-170 overflow-hidden!">
+      <div className="w-full relative px-5 sm:px-15 lg:px-20 xl:px-70 pb-10 h-90 sm:h-170 overflow-hidden!">
         <Swiper
           breakpoints={{
             0: {

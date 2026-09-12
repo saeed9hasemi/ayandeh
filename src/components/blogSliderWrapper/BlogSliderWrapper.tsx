@@ -26,7 +26,7 @@ function BlogSliderWrapper({ title, data, href }: IBlogSliderWrapper) {
           {title}
         </div>
       </Container>
-      <div className="w-full relative px-15 lg:px-20 xl:px-70 pb-10 h-90 overflow-hidden! mb-5">
+      <div className="w-full relative px-10 lg:px-20 xl:px-70 pb-10 h-90 overflow-hidden! mb-5">
         <Swiper
           breakpoints={{
             0: {

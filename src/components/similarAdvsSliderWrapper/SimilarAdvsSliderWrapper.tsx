@@ -36,7 +36,7 @@ function SimilarAdvsSliderWrapper({
         </div>
       </Container>
       {(data?.length ?? 0 > 0) ? (
-        <div className="w-full relative px-15 lg:px-20 xl:px-70 pb-10 h-90 overflow-hidden! mb-5">
+        <div className="w-full relative px-5 lg:px-20 xl:px-70 pb-10 h-90 overflow-hidden! mb-5">
           <Swiper
             breakpoints={{
               0: {
