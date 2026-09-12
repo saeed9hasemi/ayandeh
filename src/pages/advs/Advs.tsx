@@ -343,7 +343,14 @@ function Advs() {
             <div className="w-full flex flex-row-reverse items-center gap-2">
               <button
                 className="rounded-lg px-4 py-2 text-sm text-white bg-[#5D5FEF] hover:bg-[#8B91FC] cursor-pointer transition-all duration-300"
-                onClick={() => setChange(change + 1)}
+                onClick={() => {
+                  setChange(change + 1);
+                  setPage(1);
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                  });
+                }}
               >
                 فیلتر کردن
               </button>
@@ -358,6 +365,11 @@ function Advs() {
                   setPlaceType(0);
                   setSubCategory(0);
                   setChange(change - 1);
+                  setPage(1);
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                  });
                 }}
               >
                 بازنشانی

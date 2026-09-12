@@ -39,11 +39,11 @@ function BlogDetails() {
               <p>{data?.updated_at.month.string}</p>
             </div>
           </div>
-          <div className="w-full rounded-2xl mb-15">
+          <div className="w-full  rounded-2xl h-70 sm:h-90 md:h-110 lg:h-140 overflow-hidden mb-15">
             <img
               src={fullURL(data?.image.url)}
               alt={data?.title}
-              className="w-full h-full object-cover rounded-2xl"
+              className="w-full h-full object-fill rounded-2xl"
             />
           </div>
           <div className="text-xl font-semibold mb-10">{data?.title}</div>

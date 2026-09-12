@@ -29,15 +29,19 @@ function AdvInfoBox({ data }: IAdvInfoBox) {
       question: "نوع ملک:",
       answer: placeTypeTranslator(data?.place_type ?? 0),
     },
-    { id: 4, question: "تعداد خواب:", answer: `${data?.room_count} خواب ` },
-    { id: 5, question: "سن:", answer: data?.age },
-    { id: 6, question: "متراژ:", answer: ` ${data?.meterage} متر` },
+    {
+      id: 4,
+      question: "تعداد خواب:",
+      answer: `${data?.room_count ?? "---"} خواب `,
+    },
+    { id: 5, question: "سن:", answer: data?.age ?? "---" },
+    { id: 6, question: "متراژ:", answer: ` ${data?.meterage ?? "---"} متر` },
     {
       id: 7,
       question: "نوع سند:",
       answer: documentTypeTranslator(data?.document_type ?? 0),
     },
-    { id: 8, question: "طبقه:", answer: `${data?.floor} طبقه` },
+    { id: 8, question: "طبقه:", answer: `${data?.floor ?? "---"} طبقه` },
   ];
 
   let featuresField = useMemo(() => {

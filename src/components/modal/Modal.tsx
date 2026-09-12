@@ -41,7 +41,7 @@ function ModalComp() {
             <img
               src={fullURL(modal.image?.url)}
               alt={modal.image?.alt}
-              className="w-full sm:w-[90%] md:w-[60%] lg:w-[50%] xxl:w-[30%] object-cover!"
+              className="w-full sm:w-[80%] md:w-[40%] lg:w-[30%] xxl:w-[20%] object-cover!"
             />
           )}
         </div>
