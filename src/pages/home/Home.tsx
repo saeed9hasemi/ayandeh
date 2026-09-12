@@ -1,12 +1,12 @@
 import { useEffect } from "react";
-import Container from "../../components/container/Container";
-import Hero from "../../components/hero/Hero";
-import HomeBlog from "../../components/homeBlog/HomeBlog";
-import Latests from "../../components/latests/Latests";
-import Loading from "../../components/loading/Loading";
-import MidBanner from "../../components/midBanner/MidBanner";
-import Videos from "../../components/videos/Videos";
-import { useHomePage } from "../../contexts/HomePageContext";
+import Container from "@/components/container/Container";
+import HomeBlog from "@/components/homeBlog/HomeBlog";
+import Latests from "@/components/latests/Latests";
+import Loading from "@/components/loading/Loading";
+import MidBanner from "@/components/midBanner/MidBanner";
+import Videos from "@/components/videos/Videos";
+import { useHomePage } from "@/contexts/HomePageContext";
+import Hero from "@/components/hero/Hero";
 
 function Home() {
   const { loading } = useHomePage();
@@ -22,9 +22,11 @@ function Home() {
       {loading && <Loading />}
       <Hero />
       <Latests />
-      <Container>
-        <MidBanner />
-      </Container>
+      <div className="mb-30">
+        <Container>
+          <MidBanner />
+        </Container>
+      </div>
       <Videos />
       <HomeBlog />
     </>

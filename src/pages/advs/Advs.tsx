@@ -1,18 +1,18 @@
 import { useNavigate, useParams } from "react-router-dom";
-import Container from "../../components/container/Container";
+import Container from "@/components/container/Container";
 import { useEffect, useMemo, useState } from "react";
-import { useAPI } from "../../hooks/useAPI";
-import LatestSliderSlide from "../../components/latestSliderSlide/LatestSliderSlide";
+import { useAPI } from "@/hooks/useAPI";
+import LatestSliderSlide from "@/components/latestSliderSlide/LatestSliderSlide";
 import {
   categoryTranslator,
   dealTypeTranslator,
   fullURL,
-} from "../../services/api";
-import type { IAdvNumeric } from "../../types/types";
-import Pagination from "../../components/pagination/Pagination";
-import CustomInput from "../../components/customInput/CustomInput";
+} from "@/services/api";
+import type { IAdvNumeric } from "@/types/types";
+import Pagination from "@/components/pagination/Pagination";
+import CustomInput from "@/components/customInput/CustomInput";
 import { RiInformationLine } from "react-icons/ri";
-import Loading from "../../components/loading/Loading";
+import Loading from "@/components/loading/Loading";
 
 function Advs() {
   const navigate = useNavigate();

@@ -1,9 +1,9 @@
-import Container from "../../components/container/Container";
-import { useAPI } from "../../hooks/useAPI";
-import { fullURL } from "../../services/api";
-import type { IContactUs } from "../../types/types";
-import ContactUsCart from "../../components/contactUsCart/ContactUsCart";
-import Loading from "../../components/loading/Loading";
+import Container from "@/components/container/Container";
+import { useAPI } from "@/hooks/useAPI";
+import { fullURL } from "@/services/api";
+import type { IContactUs } from "@/types/types";
+import ContactUsCart from "@/components/contactUsCart/ContactUsCart";
+import Loading from "@/components/loading/Loading";
 import { useEffect } from "react";
 
 type TVariant = "phone" | "tel" | "location";

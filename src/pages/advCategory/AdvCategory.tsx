@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
-import type { IAdvNumeric } from "../../types/types";
-import { useAPI } from "../../hooks/useAPI";
+import type { IAdvNumeric } from "@/types/types";
+import { useAPI } from "@/hooks/useAPI";
 import { useEffect, useMemo, useState } from "react";
-import SimilarAdvsSliderWrapper from "../../components/similarAdvsSliderWrapper/SimilarAdvsSliderWrapper";
-import Hero from "../../components/hero/Hero";
-import Loading from "../../components/loading/Loading";
+import SimilarAdvsSliderWrapper from "@/components/similarAdvsSliderWrapper/SimilarAdvsSliderWrapper";
+import Hero from "@/components/hero/Hero";
+import Loading from "@/components/loading/Loading";
 
 function AdvCategory() {
   const { category } = useParams();

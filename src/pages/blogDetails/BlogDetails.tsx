@@ -1,12 +1,12 @@
 import { useParams } from "react-router-dom";
-import Container from "../../components/container/Container";
-import { useAPI } from "../../hooks/useAPI";
-import { fullURL } from "../../services/api";
-import type { IBlogMain } from "../../types/types";
-import TagsShow from "../../components/tagsShow/TagsShow";
-import BlogDetailsLatest from "../../components/blogDetailsLatests/BlogDetailsLatest";
+import Container from "@/components/container/Container";
+import { useAPI } from "@/hooks/useAPI";
+import { fullURL } from "@/services/api";
+import type { IBlogMain } from "@/types/types";
+import TagsShow from "@/components/tagsShow/TagsShow";
+import BlogDetailsLatest from "@/components/blogDetailsLatests/BlogDetailsLatest";
 import { FaRegCalendarAlt } from "react-icons/fa";
-import Loading from "../../components/loading/Loading";
+import Loading from "@/components/loading/Loading";
 import { useEffect } from "react";
 
 function BlogDetails() {

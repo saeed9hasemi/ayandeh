@@ -1,7 +1,7 @@
 import { FaPlay } from "react-icons/fa";
-import type { IAdvNumeric } from "../../types/types";
-import { fullURL } from "../../services/api";
-import { useHomePage } from "../../contexts/HomePageContext";
+import type { IAdvNumeric } from "@/types/types";
+import { fullURL } from "@/services/api";
+import { useHomePage } from "@/contexts/HomePageContext";
 import { IoMdEye } from "react-icons/io";
 import AdvDetailsMediaImage from "../advDetailsMediaImage/AdvDetailsMediaImage";
 

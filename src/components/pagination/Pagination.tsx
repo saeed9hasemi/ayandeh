@@ -23,6 +23,10 @@ function Pagination({ count, page, setPage, limit = 8 }: IPagination) {
         onClick={() => {
           setPage((current: number) => {
             if (current != 1) {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
               return current - 1;
             } else {
               return current;
@@ -36,7 +40,13 @@ function Pagination({ count, page, setPage, limit = 8 }: IPagination) {
         return (
           <div
             key={item}
-            onClick={() => setPage(item)}
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+              setPage(item);
+            }}
             className={`size-8 rounded-full  cursor-pointer flex items-center justify-center border ${page == item ? "bg-[#5456E4] border-[#5456E4] text-white" : "bg-white border-[#AAAAAB] text-[#AAAAAB]"}`}
           >
             {item}
@@ -48,6 +58,10 @@ function Pagination({ count, page, setPage, limit = 8 }: IPagination) {
         onClick={() => {
           setPage((current: number) => {
             if (current != pageNumbers) {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
               return current + 1;
             } else {
               return current;

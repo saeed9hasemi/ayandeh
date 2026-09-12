@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function MidBanner() {
   return (
-    <div className="mb-35 w-full">
+    <div className="w-full">
       <Link to={"/advice"}>
         <img
           src={MidBannerImage}

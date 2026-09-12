@@ -19,14 +19,14 @@ function BlogSliderSlide({
         <img
           src={imgURL}
           alt={alt}
-          className="w-full h-full object-cover group-hover:scale-125 rounded-2xl transition-all duration-300"
+          className="w-full aspect-square object-cover group-hover:scale-125 rounded-2xl transition-all duration-300"
         />
       ) : (
         <>
           <img
             src={EmptyImage}
             alt={alt}
-            className="w-full h-full object-fill rounded-2xl transition-all duration-300 "
+            className="w-full aspect-square object-fill rounded-2xl transition-all duration-300 "
           />
           <div className="absolute inset-0 bg-linear-to-t from-[#656566] to-transparent"></div>
         </>

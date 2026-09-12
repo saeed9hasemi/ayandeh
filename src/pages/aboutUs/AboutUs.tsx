@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import Container from "../../components/container/Container";
-import Loading from "../../components/loading/Loading";
-import { useAPI } from "../../hooks/useAPI";
-import { fullURL } from "../../services/api";
-import type { IAboutUs } from "../../types/types";
+import Container from "@/components/container/Container";
+import Loading from "@/components/loading/Loading";
+import { useAPI } from "@/hooks/useAPI";
+import { fullURL } from "@/services/api";
+import type { IAboutUs } from "@/types/types";
 
 function AboutUs() {
   const { data, loading } = useAPI<IAboutUs>("api/about_us", { method: "GET" });

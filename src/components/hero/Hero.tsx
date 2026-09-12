@@ -4,7 +4,7 @@ import HeroPanel from "../heroPanel/HeroPanel";
 
 function Hero() {
   return (
-    <div className="w-full mb-35">
+    <div className="w-full mb-20 sm:25 md:mb-35">
       <div className="w-full h-135 relative">
         <img
           src={HeroImage}

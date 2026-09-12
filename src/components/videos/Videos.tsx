@@ -1,7 +1,7 @@
 import Container from "../container/Container";
 import VideoPlayer from "../videoPlayer/VideoPlayer";
-import { useHomePage } from "../../contexts/HomePageContext";
-import { fullURL } from "../../services/api";
+import { useHomePage } from "@/contexts/HomePageContext";
+import { fullURL } from "@/services/api";
 
 function Videos() {
   const { data } = useHomePage();

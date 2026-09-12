@@ -29,7 +29,7 @@ function SimilarAdvsSliderWrapper({
 }: ISimilarAdvsSliderWrapper) {
   const navigate = useNavigate();
   return (
-    <div className="pt-10">
+    <div>
       <Container>
         <div className="w-full text-xl border-r-4 border-r-[#427ae0] p-1 px-3 font-semibold mb-15">
           {title}
@@ -106,7 +106,7 @@ function SimilarAdvsSliderWrapper({
           </Swiper>
         </div>
       ) : (
-        <div className="w-full h-full flex flex-col gap-4 items-center justify-center">
+        <div className="w-full h-full flex flex-col gap-4 items-center justify-center mb-10">
           <RiInformationLine size={80} color="#1677FF" />
           <p className="text-xl lg:text-2xl">آگهی برای این زیردسته یافت نشد</p>
         </div>

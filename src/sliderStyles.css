@@ -144,6 +144,10 @@
   .latestSwiper .swiper-slide {
     height: 100% !important;
   }
+  .latestSwiper .swiper-button-prev,
+  .latestSwiper .swiper-button-next {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 640px) {

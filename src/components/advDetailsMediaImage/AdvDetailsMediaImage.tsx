@@ -1,7 +1,7 @@
 import { IoMdEye } from "react-icons/io";
-import { fullURL } from "../../services/api";
-import { useHomePage } from "../../contexts/HomePageContext";
-import type { IImage } from "../../types/types";
+import { fullURL } from "@/services/api";
+import { useHomePage } from "@/contexts/HomePageContext";
+import type { IImage } from "@/types/types";
 
 interface IAdvDetailsMediaImage {
   image: IImage | undefined | null;

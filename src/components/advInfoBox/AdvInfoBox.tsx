@@ -32,16 +32,24 @@ function AdvInfoBox({ data }: IAdvInfoBox) {
     {
       id: 4,
       question: "تعداد خواب:",
-      answer: `${data?.room_count ?? "---"} خواب `,
+      answer: data?.room_count ? `${data?.room_count} خواب ` : "ثبت نشده",
     },
-    { id: 5, question: "سن:", answer: data?.age ?? "---" },
-    { id: 6, question: "متراژ:", answer: ` ${data?.meterage ?? "---"} متر` },
+    { id: 5, question: "سن:", answer: data?.age ? data?.age : "ثبت نشده" },
+    {
+      id: 6,
+      question: "متراژ:",
+      answer: data?.meterage ? `${data?.meterage} متر` : "ثبت نشده",
+    },
     {
       id: 7,
       question: "نوع سند:",
       answer: documentTypeTranslator(data?.document_type ?? 0),
     },
-    { id: 8, question: "طبقه:", answer: `${data?.floor ?? "---"} طبقه` },
+    {
+      id: 8,
+      question: "طبقه:",
+      answer: data?.floor ? `${data?.floor} طبقه` : "ثبت نشده",
+    },
   ];
 
   let featuresField = useMemo(() => {
@@ -84,7 +92,7 @@ function AdvInfoBox({ data }: IAdvInfoBox) {
                 className="py-3 flex items-center justify-between gap-10 border-b-2 border-b-[#E0E5F0] last-of-type:border-0"
               >
                 <p>{item.question}</p>
-                <p>{item.answer ?? "---"}</p>
+                <p>{item.answer ?? "ثبت نشده"}</p>
               </div>
             );
           })}

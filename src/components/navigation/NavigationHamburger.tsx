@@ -32,7 +32,7 @@ function NavigationHamburger() {
     >
       <IoMdMenu color="#427AE0" size={30} />
       {active && (
-        <div className="absolute w-27 right-0 bg-white z-999 rounded-lg shadow-lg p-1 text-sm">
+        <div className="absolute w-27 right-0 bg-white z-9999 rounded-lg shadow-lg p-1 text-sm">
           {navs.map((item) => {
             return (
               <Link

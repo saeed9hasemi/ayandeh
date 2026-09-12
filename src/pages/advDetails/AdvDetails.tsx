@@ -1,13 +1,13 @@
 import { useParams } from "react-router-dom";
-import { useAPI } from "../../hooks/useAPI";
-import type { IAdvNumeric } from "../../types/types";
-import AdvDetailsMediaPart from "../../components/advDetailsMediaPart/AdvDetailsMediaPart";
-import Container from "../../components/container/Container";
-import AdvInfoBox from "../../components/advInfoBox/AdvInfoBox";
-import MidBanner from "../../components/midBanner/MidBanner";
+import { useAPI } from "@/hooks/useAPI";
+import type { IAdvNumeric } from "@/types/types";
+import AdvDetailsMediaPart from "@/components/advDetailsMediaPart/AdvDetailsMediaPart";
+import Container from "@/components/container/Container";
+import AdvInfoBox from "@/components/advInfoBox/AdvInfoBox";
+import MidBanner from "@/components/midBanner/MidBanner";
 import { useEffect, useMemo } from "react";
-import SimilarAdvsSliderWrapper from "../../components/similarAdvsSliderWrapper/SimilarAdvsSliderWrapper";
-import Loading from "../../components/loading/Loading";
+import SimilarAdvsSliderWrapper from "@/components/similarAdvsSliderWrapper/SimilarAdvsSliderWrapper";
+import Loading from "@/components/loading/Loading";
 
 function AdvDetails() {
   const { id } = useParams();
@@ -50,7 +50,7 @@ function AdvDetails() {
             <AdvDetailsMediaPart adv={data} />
           </div>
           <div className="mb-5 text-lg md:text-xl">{data?.title}</div>
-          <div className="mb-15">
+          <div className="mb-10">
             <AdvInfoBox data={data} />
           </div>
           <div className="mb-15">

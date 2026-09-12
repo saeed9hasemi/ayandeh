@@ -1,7 +1,7 @@
-import { useAPI } from "../../hooks/useAPI";
-import type { IBlogMain } from "../../types/types";
-import BlogSliderWrapper from "../../components/blogSliderWrapper/BlogSliderWrapper";
-import Loading from "../../components/loading/Loading";
+import { useAPI } from "@/hooks/useAPI";
+import type { IBlogMain } from "@/types/types";
+import BlogSliderWrapper from "@/components/blogSliderWrapper/BlogSliderWrapper";
+import Loading from "@/components/loading/Loading";
 import { useEffect } from "react";
 
 function Blogs() {

@@ -1,12 +1,12 @@
 import { useNavigate, useParams } from "react-router-dom";
-import type { IBlogMain } from "../../types/types";
-import { useAPI } from "../../hooks/useAPI";
+import type { IBlogMain } from "@/types/types";
+import { useAPI } from "@/hooks/useAPI";
 import { useEffect, useMemo } from "react";
-import Container from "../../components/container/Container";
-import Pagination from "../../components/pagination/Pagination";
-import BlogSliderSlide from "../../components/blogSliderSlide/BlogSliderSlide";
-import { fullURL } from "../../services/api";
-import Loading from "../../components/loading/Loading";
+import Container from "@/components/container/Container";
+import Pagination from "@/components/pagination/Pagination";
+import BlogSliderSlide from "@/components/blogSliderSlide/BlogSliderSlide";
+import { fullURL } from "@/services/api";
+import Loading from "@/components/loading/Loading";
 
 function BlogCategory() {
   const { id, title } = useParams();

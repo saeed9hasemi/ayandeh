@@ -16,7 +16,7 @@ function LatestSliderSlide({
   dealTypeTitle,
 }: ILatestSliderSlide) {
   return (
-    <div className="relative w-full h-full aspect-square rounded-2xl overflow-hidden cursor-pointer group">
+    <div className="relative w-full h-full aspect-square! rounded-2xl overflow-hidden cursor-pointer group">
       {imgURL ? (
         <img
           src={imgURL}
