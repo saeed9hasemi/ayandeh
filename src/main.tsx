@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Layout from "./components/layout/Layout.tsx";
 import HomePageContext from "./contexts/HomePageContext.tsx";
 import ModalComp from "./components/modal/Modal.tsx";
@@ -11,14 +11,14 @@ import GoUpButton from "./components/goUpButton/GoUpButton.tsx";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <HomePageContext>
-      <BrowserRouter>
+      <HashRouter>
         <Layout>
           <App />
         </Layout>
         <GoUpButton />
         <ModalComp />
         <ModalSearch />
-      </BrowserRouter>
+      </HashRouter>
     </HomePageContext>
   </StrictMode>,
 );
